@@ -192,6 +192,9 @@ header {
     
 }
 .mainButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right, rgb(0, 0, 161), rgb(42, 42, 247));
     color: white;
     font-size: 12px;
@@ -201,9 +204,7 @@ header {
     width: 150px;
     border-radius: 4px;
     cursor: pointer;
-    /* transition: transform background-color 0.8s ease-in-out;
-     */
-     transition: transform 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 .mainButton:hover {
     background: #3295ce;
@@ -356,6 +357,7 @@ header {
     width: 100%;
     position: relative;
     padding-top: 6px;
+    overflow-y:hidden;
 }
 
 .eachCard {
@@ -389,6 +391,7 @@ header {
 .cardText {
     padding: 35px 33px;
     margin: 0;
+    min-width: 380px;     
 }
 .cardText h3 {
     font-size: 16px;
@@ -415,9 +418,6 @@ header {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-
-
-
 .innerPadding {
     padding: 60px 0;
 }
@@ -426,7 +426,6 @@ header {
     background-color: #fff;
     position: relative;
 }
-
 .getAppInner {
     display: flex;
     min-height: 374px;
@@ -446,7 +445,6 @@ header {
     height: 370px;
     width: auto;
 }
-
 .content p {
     color: #555f62;
     font-size: 14px;
@@ -461,7 +459,6 @@ header {
     color: #141719;
     font-weight: 700;
 }
-
 .contentButton {
     color: #fff;
     border: 1px solid #e1e4e5;
@@ -484,11 +481,9 @@ header {
     background-color: #fff;
     box-shadow: 8px 8px 23px 0 rgba(0, 0, 0, 0.1);
 }
-
 .eachCard:hover .cardImage {
     transform: translateY(-3px);
 }
-
 .imageWrapper {
     position: relative;
     overflow: hidden;
@@ -505,5 +500,29 @@ header {
     font-size: 14px;
     color: #555f62;
     font-weight: 500;
+    margin-top: 15px;
 }
-
+.imageWrapper2 {
+    height: 52px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+}
+.awardImg {
+    height: 100%;  
+}
+.cardInnerDiv {
+    padding: 33px;
+    padding-left: 0;
+}
+.cardHeight {
+    flex-shrink: 0;
+    max-height: 240px;
+    background-color: #fff;
+    border: none;
+}
+.cardHeight:hover {
+    border: 1px solid #d6d6d662;
+    box-shadow: 8px 8px 23px 0 rgba(0, 0, 0, 0.1);
+}
