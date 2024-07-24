@@ -44,6 +44,7 @@ header {
 .iconDiv {
     display: flex;
     align-items: center;
+    justify-self: center;
 }
 
 .iconImage {
@@ -54,7 +55,6 @@ header {
 .iconText a {
     color: #555f62;
 }
-
 .iconText h1 {
     font-size: 20px;
     margin-left: 5px;
@@ -92,7 +92,9 @@ header {
     display: flex;
     align-items: center;
 }
-
+.searchLanguage div:last-child {
+    margin-right: 0;
+}
 .searchLanguage i  {
     font-size: 19px;
     font-weight: bolder;
@@ -528,4 +530,116 @@ header {
 .cardHeight:hover {
     border: 1px solid #d6d6d662;
     box-shadow: 8px 8px 23px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+    padding-top: 60px;
+}
+.footerH {
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+footer .iconText h1 a{
+    color: #141719;
+}
+.wholeVw {
+    background-color: #fff;
+}
+
+.spccefiller {
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.footerInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto;
+}
+.footerCaption {
+    padding-bottom: 24px;
+}
+.footerCaption a{
+    color: #141719;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1.1;
+}
+.block a{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    color: #555f62;
+    font-size: 14px;
+    letter-spacing: 1.1;  
+}
+.block a:hover {
+    color: #182cc0;
+}
+.footerInner > div:last-child a {
+    display: flex;
+    font-weight: 800;
+}
+.footerInner > div:last-child a:hover {
+    text-decoration: underline;
+}
+.footerInner > div:last-child p {
+    color: #141719;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1.1;
+    margin-bottom: 14px;
+}
+.socIcons {
+    display: flex;
+}
+.socIcon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #f9fafa;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.socIcon:hover {
+    background-color: #e0e0e0;
+}
+.footerBtm {
+    border-top: 1px solid #eef1f1;
+    padding:20px 0;
+    background-color: #fff;
+
+}
+.lang {
+    padding: 8px 5px;
+    border-radius: 5px;
+}
+.lang a {
+    color: #141719;
+}
+.lang:hover {
+    background-color:#e0e0e0; ;
+}
+.lastLine {
+    display: flex;
+    align-items: center;
+    
+}
+.lastLine p a{
+    color: #141719;
+    letter-spacing: 1.1;
+    font-size: 12px;
+    margin-right: 18px;
+}
+.lastLine p a:hover {
+    color: #182cc0;
 }
