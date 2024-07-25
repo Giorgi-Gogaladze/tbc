@@ -128,7 +128,7 @@ header {
 .imageContainer {
     margin-top: 40px;
     width: 82.5vw; 
-    aspect-ratio: auto 1772 / 580;
+    aspect-ratio: auto 1021 / 360;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -155,6 +155,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -167,6 +168,8 @@ header {
     z-index: 2;
     flex-direction: column;
     display: flex;
+    bottom: 40px;
+    left: 40px;
 }
 
 .big-text-wrapper {
@@ -323,6 +326,7 @@ header {
 
 .infoDiv {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .innerInfoDiv {
@@ -450,6 +454,10 @@ header {
     height: 370px;
     width: auto;
 }
+.content {
+    max-width: 500px;
+    width: 100%;
+}
 .content p {
     color: #555f62;
     font-size: 14px;
@@ -505,7 +513,7 @@ header {
     font-size: 14px;
     color: #555f62;
     font-weight: 500;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .imageWrapper2 {
     height: 52px;
@@ -518,8 +526,9 @@ header {
     height: 100%;  
 }
 .cardInnerDiv {
-    padding: 33px;
+    padding: 22px;
     padding-left: 0;
+    padding-right: 0;
 }
 .cardHeight {
     flex-shrink: 0;
@@ -532,7 +541,7 @@ header {
     box-shadow: 8px 8px 23px 0 rgba(0, 0, 0, 0.1);
 }
 
-
+/* ******************************************footer************************************** */ 
 footer {
     padding-top: 60px;
 }
@@ -565,12 +574,19 @@ footer .iconText h1 a{
 .footerCaption {
     padding-bottom: 24px;
 }
+.flexIcon {
+    display: flex;
+}
+.flexIcon i {
+    margin-right: 10px;
+}
 .footerCaption a{
     color: #141719;
     font-weight: 800;
     font-size: 14px;
     letter-spacing: 1.1;
 }
+
 .block a{
     display: flex;
     flex-direction: column;
@@ -588,6 +604,7 @@ footer .iconText h1 a{
 }
 .footerInner > div:last-child a:hover {
     text-decoration: underline;
+    color: #424a4d;
 }
 .footerInner > div:last-child p {
     color: #141719;
@@ -615,7 +632,7 @@ footer .iconText h1 a{
 }
 .footerBtm {
     border-top: 1px solid #eef1f1;
-    padding:20px 0;
+    padding: 25.5px 0;
     background-color: #fff;
 
 }
@@ -643,3 +660,151 @@ footer .iconText h1 a{
 .lastLine p a:hover {
     color: #182cc0;
 }
+
+.btnMenu {
+    z-index: 80;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    background-color:#424a4d ;
+    transition:  background-color 0.3s ease-in-out;
+}
+.syrcle {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.syrcle i {
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+}
+.btnMenu:hover {
+    background-color: #6f7475af;
+}
+.replacementText {
+    display: none; 
+    padding: 15px 20px;
+    border: 2px solid #182cc0;
+    border-radius: 6px;
+    width: 120px;
+    height: auto;
+    margin-top: 30px;
+    background-color: #f9fafa;
+    z-index: 999;
+    cursor: pointer;
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+}
+
+
+/************************************* media query for pad (idk) *******************************************/
+@media (max-width: 970px) {
+    .forApps {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .forApps :hover {
+        border: 1px solid #c7c9c9;
+    }
+    .replacementText {
+        display: block;
+        color: #182cc0;
+    }
+    .contentButton {
+        display: none;
+    }
+    .content {
+        padding:15px;
+    }
+}
+
+@media(max-width:768px) {
+   /*********************************  for footer ********************************************/
+    .footerH {
+        padding: 40px 0;
+        border-bottom: 1px solid #eef1f1;
+    }
+    .footerH h1 {
+        display: none;
+    }
+    .footerH .iconImage {
+        width: 36px;
+        height: auto;
+    }
+    .footerInner {
+        display: flex;
+        flex-direction: column;
+    }
+    .block {
+        display: none;
+    }
+    .footerCaption {
+        padding: 40px 0;
+        border-top: 1px solid #eef1f1;
+    }
+    .footerCaption a {
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .footerInner > div:last-child .block {
+        display: block;
+    }
+    .footerInner > div:last-child .block p{
+        font-size: 26px;
+       
+    }
+   .footerBtm .headerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .footerBtm .headerContent .lastLine {
+    padding-top: 30px;
+   }
+   .footerBtm .headerContent .lastLine a {
+    color: #424a4d;
+   }
+   .mainWrapper {
+    width: 90vw;
+   }
+   /********************************************* for image section ***********************************/
+   .imageContainer {
+    aspect-ratio: auto 862 / 500;
+    overflow: hidden;  
+   }
+   .innerDiv {
+    justify-content: center;
+    left: auto;
+   }
+   .innerDiv p {
+    font-size: 13px;
+    margin-bottom: 12px;
+   }
+   .innerDiv h1 {
+    font-size: 16px;
+    margin-bottom: 12px;
+   }
+   .mainButton {
+    width: 100%;
+   }
+ /***********************************************   for number cards ***************************************/
+   .infoDiv {
+    display: flex;
+    flex-direction: column;
+   }
+   .innerInfoDiv {
+    width: 100%;
+    margin-top: 30px;
+   }
+}
+
