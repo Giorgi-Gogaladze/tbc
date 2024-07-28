@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="images/logo-tbc-bank-blk.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/node_modules/bpg-arial/css/bpg-arial.min.css">
@@ -19,16 +20,49 @@
                     <div class="iconText"><h1><a href="#">&nbspკონცეპტი</a></h1></div>
                 </div>
                 <nav>
-                    <ul class="navLinks">
-                        <li><a href="#">პროდუქტები</a></li>
-                        <li><a href="#">შეთავაზებები</a></li>
-                        <li><a href="#">კონცეფტის სივრცე</a></li>
-                    </ul>
+                    <div class="navLinks">
+                        <div><a href="#">პროდუქტები</a></div>
+                        <div><a href="#">შეთავაზებები</a></div>
+                        <div><a href="#">კონცეფტის სივრცე</a></div>
+                    </div>
+
+                    <!-- hidden part -->
+                    <div class="navMenu">
+                        <div class="navItem">
+                            <a href="#">პროდუქტები <i class="bi bi-chevron-down"></i></a>
+                            <div class="navDropdown">
+                                <div><a href="#">პროდუქტების მიმოხილვა</a></div> 
+                                <div><a href="#">ნაკრები</a></div>
+                                <div><a href="#">პირადი ბანკირი</a></div>
+                            </div>
+                        </div>
+                        <div class="navItem">
+                            <a href="#">შეთავაზებები <i class="bi bi-chevron-down"></i></a>
+                            <div class="navDropdown">
+                                <div><a href="#">მიმოხილვა</a></div>
+                                <div><a href="#">შეთავაზებები</a></div>
+                                <div><a href="#">ღონისძიებები</a></div>
+                            </div>
+                        </div>
+                        <div class="navItem">
+                            <a href="#">კონცეფტის სივრცე <i class="bi bi-chevron-down"></i></a>
+                            <div class="navDropdown">
+                                <div><a href="#">მიმოხილვა</a></div>
+                                <div><a href="#">კაფე</a></div>
+                                <div><a href="#">ბიბლიოთეკა</a></div>
+                                <div><a href="#">კონცეპტ ფილიალები</a></div>
+                            </div>
+                        </div>
+                    </div>    
+
                 </nav>
                 <div class="searchLanguage">
                     <div><a href="#"><i class="bi bi-search"></i></a></div>
                     <div><a class="blueLink" href="#"><i class="bi bi-arrow-right"></i>გამოიწერეთ ნაკრები</a></div>
                     <div class="lang"><a href="#"><i class="bi bi-globe"></i>ქარ</a></div>
+                    <div class="hamburgerMenu">
+                        <a href="#"><i class="bi bi-list"></i></a>
+                    </div>
                 </div>
             </div>
         </div>    
@@ -46,7 +80,7 @@
                     <div class="innerDiv">
                         <h1>თიბისი კონცეპტი</h1>
                         <p>პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა და ინტერესებზე</p>
-                        <div class="mainButton"><i class="bi bi-arrow-right"></i>გამოიწერეთ</div>
+                        <div class="mainButton"><i class="bi bi-arrow-right"></i> გამოიწერეთ</div>
                     </div>
                 </div>
             </div>
@@ -479,5 +513,6 @@
             <i class="bi bi-three-dots-vertical"></i>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
